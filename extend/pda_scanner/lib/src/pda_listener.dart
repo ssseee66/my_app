@@ -8,7 +8,6 @@ import 'dart:io';
 class PdaListener extends StatefulWidget {
   Control? parent;
   late Control control;
-  String text = "";
 
   PdaListener({
     super.key,
@@ -31,6 +30,7 @@ class _PdaListener extends State<PdaListener>
     var data_tag = widget.control.attrString("data_tag");
     MyPdaScannerUtil pdaScannerUtil = MyPdaScannerUtil();
     pdaScannerUtil.sendMessageToAndroid(pda_action!, data_tag!);
+    pda_code = data_code;
     TextEditingController _controller = TextEditingController.fromValue(
         TextEditingValue(text: "扫描到数据:$data_code"));
     Widget pda_control = TextField(controller: _controller);
@@ -43,7 +43,6 @@ class _PdaListener extends State<PdaListener>
     /// 编写你的逻辑
     setState(() {
       data_code = code;
-      widget.text = code;
     });
   }
 }
