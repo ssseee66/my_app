@@ -2,8 +2,6 @@
 from flet_core.constrained_control import ConstrainedControl
 from typing import Optional
 
-
-
 class PdaListener(ConstrainedControl):
     """
     PdaListener 控件。
@@ -18,7 +16,6 @@ class PdaListener(ConstrainedControl):
             hint_text: Optional[str] = None,
             on_change = None,
             on_listener = None,
-            event_count: Optional[int] = 0,
         ):
         ConstrainedControl.__init__(self)
         self.pda_code = pda_code
@@ -28,7 +25,6 @@ class PdaListener(ConstrainedControl):
         self.hint_text = hint_text
         self.on_change = on_change
         self.on_listener = on_listener
-        self.event_count = event_count
     
 
 
@@ -96,13 +92,6 @@ class PdaListener(ConstrainedControl):
         self._set_attr("start_listener", True if handler is not None else None)
 
 
-    @property
-    def event_count(self):
-        return self._get_attr("event_count")
-    
-    @event_count.setter
-    def event_count(self, value):
-        self._set_attr("event_count", value)
     
      
 

@@ -4,7 +4,6 @@ import subprocess
 
 
 def main(page: ft.Page):
-    listener_num = 0
     def change_text(e):
         lists.controls.append(ft.Text("sucess"))
         # lists.controls.append(ft.Text(e))

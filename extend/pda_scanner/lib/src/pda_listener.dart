@@ -15,11 +15,9 @@ class PdaListener extends StatefulWidget {
   _PdaListener createState() => _PdaListener();
 }
 
-class _PdaListener extends State<PdaListener>
-    with MyPdaScannerMixin<PdaListener> {
+class _PdaListener extends State<PdaListener> {
   String _pda_code = "";
   bool _start_listener = false;
-  int _event_count = 0;
   late TextEditingController _controller;
   MyPdaScannerUtil pdaScannerUtil = MyPdaScannerUtil();
 
