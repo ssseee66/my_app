@@ -306,7 +306,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: fa81fafc513f791200d2d83d7b871adb79e864b9
+      resolved-ref: "3cfccaf3ea6eb71d00d6cf84183a5b6252fbbc96"
       url: "https://github.com/ssseee66/my_pda_scanner.git"
     source: git
     version: "0.0.1"

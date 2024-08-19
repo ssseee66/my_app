@@ -1,7 +1,7 @@
 my_pda_scanner
 3.4
-file:///G:/Users/FYForever/AppData/Local/Pub/Cache/git/my_pda_scanner-fa81fafc513f791200d2d83d7b871adb79e864b9/
-file:///G:/Users/FYForever/AppData/Local/Pub/Cache/git/my_pda_scanner-fa81fafc513f791200d2d83d7b871adb79e864b9/lib/
+file:///G:/Users/FYForever/AppData/Local/Pub/Cache/git/my_pda_scanner-3cfccaf3ea6eb71d00d6cf84183a5b6252fbbc96/
+file:///G:/Users/FYForever/AppData/Local/Pub/Cache/git/my_pda_scanner-3cfccaf3ea6eb71d00d6cf84183a5b6252fbbc96/lib/
 args
 3.0
 file:///G:/Users/FYForever/AppData/Local/Pub/Cache/hosted/pub.dev/args-2.5.0/
@@ -348,6 +348,6 @@ file:///G:/flutter_SDK/flutter/packages/flutter_web_plugins/
 file:///G:/flutter_SDK/flutter/packages/flutter_web_plugins/lib/
 pda_scanner
 3.4
-file:///G:/flutter_project/plugins/my_app/extend/pda_scanner/
-file:///G:/flutter_project/plugins/my_app/extend/pda_scanner/lib/
+file:///G:/my_app/extend/pda_scanner/
+file:///G:/my_app/extend/pda_scanner/lib/
 2
