@@ -16,12 +16,6 @@ class PdaListener(ConstrainedControl):
             hint_text: Optional[str] = None,
             on_change = None,
             on_listener = None,
-            qr_data: Optional[str] = None,
-            qr_data_tag: Optional[str] = None,
-            image_data: Optional[str] = None,
-            image_data_tag: Optional[str] = None,
-            ocr_data: Optional[str] = None,
-            ocr_data_tag: Optional[str] = None,
         ):
         ConstrainedControl.__init__(self)
         self.pda_code = pda_code
@@ -31,12 +25,6 @@ class PdaListener(ConstrainedControl):
         self.hint_text = hint_text
         self.on_change = on_change
         self.on_listener = on_listener
-        self.qr_data = qr_data
-        self.qr_data_tag = qr_data_tag
-        self.image_data = image_data
-        self.image_data_tag =image_data_tag
-        self.ocr_data = ocr_data
-        self.ocr_data_tag = ocr_data_tag
     
 
 
@@ -104,49 +92,7 @@ class PdaListener(ConstrainedControl):
         self._set_attr("start_listener", True if handler is not None else None)
 
     
-    @property
-    def qr_data(self):
-        return self._get_attr("qr_data")
-    @qr_data.setter
-    def qr_data(self, value):
-        self._set_attr("qr_data", value)
-
-    @property
-    def qr_data_tag(self):
-        return self._get_attr("qr_data_tag")
-    @qr_data_tag.setter
-    def qr_data_tag(self, value):
-        self._set_attr("qr_data_tag", value)
-
-    @property
-    def image_data(self):
-        return self._get_attr("image_data")
-    @image_data.setter
-    def image_data(self, value):
-        self._set_attr("image_data", value)
-
-    @property
-    def image_data_tag(self):
-        return self._get_attr("image_data_tag")
-    @image_data_tag.setter
-    def image_data_tag(self, value):
-        self._set_attr("image_data_tag", value)
-
-    @property
-    def ocr_data(self):
-        return self._get_attr("ocr_data")
-    @ocr_data.setter
-    def ocr_data(self, value):
-        self._set_attr("ocr_data", value)
-    
-    @property
-    def ocr_data_tag(self):
-        return self._get_attr("ocr_data_tag")
-    @ocr_data_tag.setter
-    def ocr_data_tag(self, value):
-        self._set_attr("ocr_data_tag", value)
-
-
+   
     
      
 

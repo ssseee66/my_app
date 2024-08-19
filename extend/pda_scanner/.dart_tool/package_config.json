@@ -237,7 +237,7 @@
     },
     {
       "name": "my_pda_scanner",
-      "rootUri": "file:///G:/Users/FYForever/AppData/Local/Pub/Cache/git/my_pda_scanner-3cfccaf3ea6eb71d00d6cf84183a5b6252fbbc96/",
+      "rootUri": "file:///G:/Users/FYForever/AppData/Local/Pub/Cache/git/my_pda_scanner-7290d62f665a4c583f9d71a7b46e6066885a8e25/",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
@@ -530,7 +530,7 @@
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-08-19T14:01:36.464491Z",
+  "generated": "2024-08-19T16:54:39.814750Z",
   "generator": "pub",
   "generatorVersion": "3.4.4",
   "flutterRoot": "file:///G:/flutter_SDK/flutter",

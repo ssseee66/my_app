@@ -32,19 +32,9 @@ class _PdaListener extends State<PdaListener> {
     var hint_text = widget.control.attrString("hint_text");
 
     var pda_action = widget.control.attrString("pda_action");
-    var qr_data_tag = widget.control.attrString("qr_data_tag");
-    var image_data_tag = widget.control.attrString("image_data_tag");
-    var ocr_data_tag = widget.control.attrString("ocr_data_tag");
-    var qr_data = widget.control.attrString("qr_data");
-    var image_data = widget.control.attrString("image_data");
-    var ocr_data = widget.control.attrString("ocr_data");
+    var data_tag = widget.control.attrString("data_tag");
 
-    Map<String, String> data_map = {
-      "qr_data_tag": qr_data_tag!,
-      "image_data_tag": image_data_tag!,
-      "ocr_data_tag": ocr_data_tag!,
-    };
-    pdaScannerUtil.sendMessageToAndroid(data_map);
+    pdaScannerUtil.sendMessageToAndroid(pda_action!, data_tag!);
     bool onChange = widget.control.attrBool("onChange", false)!;
     bool start_listener = widget.control.attrBool("start_listener")!;
     final ValueChanged<String>? _on_changed;
@@ -80,22 +70,11 @@ class _PdaListener extends State<PdaListener> {
   }
 
   @override
-  Future<void> myPdaScannerCodeHandle(dynamic code) async {
+  Future<void> myPdaScannerCodeHandle(String code) async {
     // 编写你的逻辑
     if (_start_listener) {
-      String qr_data = code['qr_data'];
-      String image_data = code['image_data'];
-      String ocr_data = code['ocr_data'];
-
-      setState(() {
-        _pda_code = qr_data;
-      });
-      widget.backend.updateControlState(widget.control.id, {
-        "pda_code": qr_data,
-        "qr_data": qr_data,
-        "image_data": image_data,
-        "ocr_data": ocr_data,
-      });
+      _pda_code = code;
+      widget.backend.updateControlState(widget.control.id, {"pda_code": code});
       widget.backend.triggerControlEvent(widget.control.id, "listener", code);
     }
   }
