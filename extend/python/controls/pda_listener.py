@@ -89,7 +89,7 @@ class PdaListener(ConstrainedControl):
     @on_listener.setter
     def on_listener(self, handler):
         self._add_event_handler("listener", handler)
-        self._set_attr("start_listener", True if handler is not None else None)
+        # self._set_attr("start_listener", True if handler is not None else None)
 
     
    
